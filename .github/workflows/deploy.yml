@@ -26,23 +26,11 @@ jobs:
     - run: npm run build
     - name: Deploy to GitHub Pages
       run: |
-        # Przełącz się na gałąź gh-pages
         git checkout -B page
-
-        git config user.email "zuzannadudzinska96@gamil.com"
+        git config user.email "zuzannadudzinska96@gmail.com"
         git config user.name "zyzik1248"
-
-        # Skopiuj zawartość z katalogu build na aktualną gałąź
         cp -r build/* .
-
-        # Dodaj wszystkie zmienione pliki do commita
         git add .
-
-        # Zrób commit
         git commit -m "Deploy to GitHub Pages"
-
-        # Push do gałęzi gh-pages
         git push origin page
-
-        # Wróć do gałęzi głównej
         git checkout main
