@@ -26,7 +26,7 @@ jobs:
     - run: npm run build
     - name: Deploy to GitHub Pages
       run: |
-        git checkout -B page
+        git checkout page
         git config user.email "zuzannadudzinska96@gmail.com"
         git config user.name "zyzik1248"
         cp -r build/* .
