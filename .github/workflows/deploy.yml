@@ -31,6 +31,6 @@ jobs:
         git config user.name "zyzik1248"
         cp -r build/* .
         git add .
-        # git commit -m "Deploy to GitHub Pages"
-        # git push origin page -u ${{ secrets.GITHUB_TOKEN }}
+        git commit -m "Deploy to GitHub Pages"
+        git push origin page -u ${{ secrets.GITHUB_TOKEN }}
         # git checkout main
