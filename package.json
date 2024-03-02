@@ -1,7 +1,7 @@
 {
   "name": "pge-ankieta",
   "version": "0.1.0",
-  "homepage": "http://witoldolszyk.github.io/ankietapola.github.io",
+  "homepage": "https://zyzik1248.github.io/ankieta",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
