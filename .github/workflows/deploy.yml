@@ -1,45 +1,26 @@
-name: Build and Deploy
+name: Node.js CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  build-and-deploy:
+  build:
+
     runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
 
-    - name: Set up Node.js
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
-        node-version: 18
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build application
-      run: npm run build
-
-    - name: Deploy to GitHub Pages
-      run: |
-        # Przełącz się na gałąź gh-pages
-        git checkout page
-
-        # Skopiuj zawartość z katalogu build na aktualną gałąź
-        cp -r build/* .
-
-        # Dodaj wszystkie zmienione pliki do commita
-        git add .
-
-        # Zrób commit
-        git commit -m "Deploy to GitHub Pages"
-
-        # Push do gałęzi gh-pages
-        git push origin gh-pages
-
-        # Wróć do gałęzi głównej
-        git checkout main
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build
