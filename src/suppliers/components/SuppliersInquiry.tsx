@@ -1,4 +1,4 @@
-import { ISuppliersInquiryMessages, InquiryQuestion, Score } from '..';
+import { ISuppliersInquiryMessages, InquiryQuestion } from '..';
 import { PrimaryButton } from '../../components/buttons/PrimaryButton';
 import { guid } from '../../utils/data/random-number';
 import styled from 'styled-components';

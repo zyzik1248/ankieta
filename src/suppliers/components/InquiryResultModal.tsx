@@ -1,4 +1,4 @@
-import { ISuppliersInquiryMessages, Score } from '..';
+import { ISuppliersInquiryMessages } from '..';
 import { PrimaryButton } from '../../components/buttons/PrimaryButton';
 import { FormInput } from '../../components/form-input';
 import { Modal } from '../../layout/modal/Modal';

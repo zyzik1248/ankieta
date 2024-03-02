@@ -1,4 +1,4 @@
-import { InquiryOption, InquiryQuestion, pgeTheme, px } from '..';
+import { InquiryOption, InquiryQuestion, pgeTheme } from '..';
 import { color, fontSize } from '../../styles/theme';
 import { guid } from '../../utils/data/random-number';
 import debounce from 'lodash.debounce';
