@@ -32,5 +32,5 @@ jobs:
         cp -r build/* .
         git add .
         git commit -m "Deploy to GitHub Pages"
-        git push --set-upstream origin page -u ${{ secrets.GITHUB_TOKEN }}
+        git push --set-upstream origin page -u ${{ secrets.GITHUB_TOKssEN }}
         git checkout main
