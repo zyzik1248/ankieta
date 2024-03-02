@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [18.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -24,3 +24,22 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
+    - name: Deploy to GitHub Pages
+      run: |
+        # Przełącz się na gałąź gh-pages
+        git checkout page
+
+        # Skopiuj zawartość z katalogu build na aktualną gałąź
+        cp -r build/* .
+
+        # Dodaj wszystkie zmienione pliki do commita
+        git add .
+
+        # Zrób commit
+        git commit -m "Deploy to GitHub Pages"
+
+        # Push do gałęzi gh-pages
+        git push origin gh-pages
+
+        # Wróć do gałęzi głównej
+        git checkout main
