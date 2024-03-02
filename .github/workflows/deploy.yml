@@ -39,7 +39,7 @@ jobs:
         git commit -m "Deploy to GitHub Pages"
 
         # Push do gałęzi gh-pages
-        git push origin gh-pages
+        git push origin page
 
         # Wróć do gałęzi głównej
         git checkout main
