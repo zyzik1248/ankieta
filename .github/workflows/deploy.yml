@@ -29,6 +29,9 @@ jobs:
         # Przełącz się na gałąź gh-pages
         git checkout -B page
 
+        git config user.email "zuzannadudzinska96@gamil.com"
+        git config user.name "zyzik1248"
+
         # Skopiuj zawartość z katalogu build na aktualną gałąź
         cp -r build/* .
 
