@@ -27,7 +27,7 @@ jobs:
     - name: Deploy to GitHub Pages
       run: |
         # Przełącz się na gałąź gh-pages
-        git checkout gh-pages
+        git checkout page
 
         # Skopiuj zawartość z katalogu build na aktualną gałąź
         cp -r build/* .
