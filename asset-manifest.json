@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ankietapola.github.io/static/css/main.e6c13ad2.css",
-    "main.js": "/ankietapola.github.io/static/js/main.6b807fcd.js",
-    "index.html": "/ankietapola.github.io/index.html",
-    "main.e6c13ad2.css.map": "/ankietapola.github.io/static/css/main.e6c13ad2.css.map",
-    "main.6b807fcd.js.map": "/ankietapola.github.io/static/js/main.6b807fcd.js.map"
+    "main.css": "/ankieta/static/css/main.e6c13ad2.css",
+    "main.js": "/ankieta/static/js/main.f8054483.js",
+    "index.html": "/ankieta/index.html",
+    "main.e6c13ad2.css.map": "/ankieta/static/css/main.e6c13ad2.css.map",
+    "main.f8054483.js.map": "/ankieta/static/js/main.f8054483.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.6b807fcd.js"
+    "static/js/main.f8054483.js"
   ]
 }
