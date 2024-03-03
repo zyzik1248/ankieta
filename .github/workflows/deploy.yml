@@ -27,6 +27,8 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
+    - name: Create file in the output directory
+      run: echo "Hello, this is an example file." > build/example.txt
     - name: Deploy
       uses: s0/git-publish-subdir-action@develop
       env:
