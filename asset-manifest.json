@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ankieta/static/css/main.e6c13ad2.css",
-    "main.js": "/ankieta/static/js/main.907dc2fd.js",
+    "main.js": "/ankieta/static/js/main.ef487ebf.js",
     "index.html": "/ankieta/index.html",
     "main.e6c13ad2.css.map": "/ankieta/static/css/main.e6c13ad2.css.map",
-    "main.907dc2fd.js.map": "/ankieta/static/js/main.907dc2fd.js.map"
+    "main.ef487ebf.js.map": "/ankieta/static/js/main.ef487ebf.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.907dc2fd.js"
+    "static/js/main.ef487ebf.js"
   ]
 }
